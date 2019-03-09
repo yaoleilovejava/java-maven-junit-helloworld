@@ -16,27 +16,6 @@ public class HelloApp {
      *
      * @param args Arguments passed to this program.
      */
-    public static void main(String[] args) {
-
-        int times = DEFAULT_TIMES;
-        if (args.length >= 1) {
-            try {
-                times = Integer.valueOf(args[0]);
-            } catch (NumberFormatException e) {
-                System.err.println("I don't understand the parameter you passed me. Is it a number? " +
-                        "Parameter was: [" + args[0] + "]");
-                System.exit(EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD);
-            }
-        }
-
-        Hello hi = new Hello();
-        try {
-            hi.setTimes(times);
-        } catch (IllegalArgumentException e) {
-            System.err.println("Something went wrong: " + e.getMessage());
-            System.exit(EXIT_STATUS_HELLO_FAILED);
-        }
-        hi.sayHello(System.out);
-    }
-
+    public static void main(String[] args) { 
+    	Sys
 }
